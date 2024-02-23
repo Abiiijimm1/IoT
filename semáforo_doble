@@ -1,0 +1,112 @@
+
+/*
+ *     SEMAFORO 2 UNIDADES
+ *        NIBBLE BOT
+*CONEXIONES DE LOS LEDS
+*PIN 13 LED VERDE 1
+*PIN 12 LED AMARILLO 1
+*PIN 11 LED ROJO 1
+*PIN 10 LED VERDE 2
+*PIN  9 LED AMARILLO 2 
+*PIN  8 LED ROJO 2
+*/
+
+//DEFINIR PINES DE SALIDAS PARA SEMAFOROS 
+//SEMAFORO 1
+const int ledVerde1    =13;
+const int ledAmarillo1 =12;
+const int ledRojo1     =11;
+//SEMAFORO 2
+const int ledVerde2    =10;
+const int ledAmarillo2 =9;
+const int ledRojo2     =8;
+
+void setup() 
+{
+  pinMode(ledVerde1,    OUTPUT);   //CONFIGURAR COMO SALIDAS
+  pinMode(ledAmarillo1, OUTPUT);
+  pinMode(ledRojo1,     OUTPUT);
+  pinMode(ledVerde2,    OUTPUT);
+  pinMode(ledAmarillo2, OUTPUT);
+  pinMode(ledRojo2,     OUTPUT);
+}
+void loop() 
+{
+  digitalWrite(ledVerde1, HIGH);   //LED VERDE 1
+  digitalWrite(ledRojo2,  HIGH);   //LED ROJO 2
+  delay(5000);   //5 SEG
+  digitalWrite(ledVerde1, LOW);//VERDE
+  delay(500);
+  digitalWrite(ledVerde1, HIGH);
+  delay(500);
+  digitalWrite(ledVerde1, LOW);
+  delay(500);
+  digitalWrite(ledVerde1, HIGH);
+  delay(500);
+  digitalWrite(ledVerde1, LOW);
+  delay(500);
+  digitalWrite(ledVerde1, HIGH);
+  delay(500);
+  digitalWrite(ledVerde1, LOW);
+  delay(500);
+  digitalWrite(ledAmarillo1,HIGH);//AMARILLO
+  delay(500);
+  digitalWrite(ledAmarillo1,LOW);
+  delay(500);
+  digitalWrite(ledAmarillo1,HIGH);
+  delay(500);
+  digitalWrite(ledAmarillo1,LOW);
+  delay(500);
+  digitalWrite(ledAmarillo1,HIGH);
+  delay(500);
+  digitalWrite(ledAmarillo1,LOW);
+  delay(500);
+  digitalWrite(ledAmarillo1,HIGH);
+  delay(500);
+  digitalWrite(ledAmarillo1,LOW);
+  delay(500);
+  digitalWrite(ledAmarillo1,HIGH);
+  delay(500);
+  digitalWrite(ledAmarillo1, LOW);
+  digitalWrite(ledRojo1,HIGH);
+  digitalWrite(ledRojo2,LOW);
+
+  //SEMAFORO 2
+  digitalWrite(ledVerde2,HIGH);//VERDE
+  delay(5000);
+  digitalWrite(ledVerde2, LOW);
+  delay(500);
+  digitalWrite(ledVerde2, HIGH);
+  delay(500);
+  digitalWrite(ledVerde2, LOW);
+  delay(500);
+  digitalWrite(ledVerde2, HIGH);
+  delay(500);
+  digitalWrite(ledVerde2, LOW);
+  delay(500);
+  digitalWrite(ledVerde2, HIGH);
+  delay(500);
+  digitalWrite(ledVerde2, LOW);
+  delay(500);
+  digitalWrite(ledAmarillo2,HIGH);//AMARILLO
+  delay(500);
+  digitalWrite(ledAmarillo2,LOW);
+  delay(500);
+  digitalWrite(ledAmarillo2,HIGH);
+  delay(500);
+  digitalWrite(ledAmarillo2,LOW);
+  delay(500);
+  digitalWrite(ledAmarillo2,HIGH);
+  delay(500);
+  digitalWrite(ledAmarillo2,LOW);
+  delay(500);
+  digitalWrite(ledAmarillo2,HIGH);
+  delay(500);
+  digitalWrite(ledAmarillo2,LOW);
+  delay(500);
+  digitalWrite(ledAmarillo2,HIGH);
+  delay(500);
+  digitalWrite(ledAmarillo2, LOW);
+  digitalWrite(ledRojo1,LOW);
+}
+
